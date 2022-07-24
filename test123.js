@@ -1,13 +1,14 @@
-import {LitElement, html} from 'lit';
+import {html, css, LitElement} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
-@customElement('my-element')
-export class MyElement extends LitElement {
-// TODO: Add a reactive property
+@customElement('simple-greeting')
+export class SimpleGreeting extends LitElement {
+  static styles = css`p { color: blue }`;
+
+  @property()
+  name = 'Somebody';
 
   render() {
-    return html`
-      <p>TODO: Add an expression</p>
-    `;
+    return html`<p>Hello, ${this.name}!</p>`;
   }
 }
