@@ -4,8 +4,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { html, css, LitElement } from "./node_modules/lit@2.2.8/index.js";
-import { customElement, property } from "./node_modules/lit@2.2.8/decorators.js";
+import { html, css, LitElement } from 'https://cdn.skypack.dev/lit';
+import { customElement, property } from 'https://cdn.skypack.dev/lit/decorators.js';
 let SimpleGreeting = class SimpleGreeting extends LitElement {
     constructor() {
         super(...arguments);
