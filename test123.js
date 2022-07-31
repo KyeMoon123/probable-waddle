@@ -6,13 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { html, css, LitElement } from 'https://cdn.skypack.dev/lit';
 import { customElement, property } from 'https://cdn.skypack.dev/lit/decorators.js';
+
+const message = ""
+
 let SimpleGreeting = class SimpleGreeting extends LitElement {
     constructor() {
         super(...arguments);
         this.name = 'Somebody';
+        this.id = 0;
+    }
+    if(this.id ==1){
+        message = "id is one"
+    }else{
+        message = "id is NOT one" 
     }
     render() {
-        return html `<p>Hello, ${this.name}!</p>`;
+        return html `<p>${message}!</p>`;
     }
 };
 SimpleGreeting.styles = css `p { color: blue }`;
