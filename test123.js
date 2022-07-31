@@ -13,9 +13,9 @@ let SimpleGreeting = class SimpleGreeting extends LitElement {
     constructor() {
         super(...arguments);
         this.name = 'Somebody';
-        this.id = 0;
+        this.id = "0";
     }
-    if(this.id ==1){
+    if(this.id == "1"){
         message = "id is one"
     }else{
         message = "id is NOT one" 
